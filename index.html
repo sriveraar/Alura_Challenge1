@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+
+
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="encriptador.js" defer></script>
+    
+</head>
+
+
+
+<body>
+    
+    <header>
+        
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <img class="logo" src="./img/Logo.png" alt="Logo">
+                </div>
+            </nav>
+
+        </header>
+
+
+
+
+    <main class="main">
+
+        <!-- Sección izquierda: Ingreso de texto-->
+        <textarea name="text" class="texto" id="ingreso_texto" placeholder="Ingrese el texto aqui" cols="40" rows="10"></textarea>
+
+        <!-- Sección derecha: Resultado de Encriptación-->
+        <div class="mensajes">
+            
+            <section class="resultado" id="resultado">
+                <img class="imagen_muñeco" id="imagen_muñeco_sin_mensaje" src="./img/Muñeco.png" alt="Imagen de mensaje no encontrado">
+                <h2 id="sin_mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="solicitud_mensaje">Ingresa el texto que desea encriptar o desencriptar</p>
+            </section>
+
+            <section>
+                <textarea class="texto" id="texto_resultado" name="text" cols="50" rows="12"></textarea>
+                <button class="copiar" id="copiar">Copiar</button>
+            </section>
+
+        </div>
+
+        
+
+        <!-- Sección izquierda: Botones-->
+        <div>
+            <section class="botones">
+                <p class="requisitos_texto"><span class="iconify" data-icon="bi:exclamation-circle-fill"></span> Solo letras minúsculas y sin acentos</p>
+                <button class="boton_encriptar" id="encriptar">Encriptar</button>
+                <button class="boton_desencriptar" id="desencriptar">Desencriptar</button>
+            </section>
+        </div>
+    </main>
+    <br>
+    <section class="footer">
+        <footer>
+            <div>
+                <p>Desarrollado por Sebastián Rivera - Challenge: Encriptador - Programa Oracle, Next Education</p>
+                <p><span class="iconify" data-icon="akar-icons:github-fill"></span> <a id="github" href="https://github.com/sriveraar" target="_blank">sriveraar</a> - <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span> <a id="linkedin" href="https://www.linkedin.com/in/sebastian-rivera-araya/" target="_blank">Sebastián Rivera</a></p>
+            </div>
+        </footer>
+    </section>
+    
+    
+</body>
+</html>

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --fuente-inter: "Inter", sans-serif;
+    --color_blanco: #FFFFFF;
+    --color_fondo: #E5E5E5;
+    --color_azul: #13265c;
+}
+
+body{
+    font-family: var(--fuente-inter);
+    background-color: var(--color_fondo);
+}
+
+.logo{
+    margin: 40px 0 0 40px;
+    width: 120px;
+    height: 48px;
+}   
+
+.navbar{
+    background-color: #6479b3;
+    color: var(--color_blanco);
+}
+
+.main{
+    width: 90%;
+    margin: auto;
+}
+
+.texto{
+    color: var(--color_azul);
+    background-color: var(--color_fondo);
+    margin: 2% auto 0;
+    height: 50%;
+    display: inline-block;
+    font-size: 2rem;
+    border: none;
+    resize: none;   
+}
+
+::placeholder{
+    color: #00008b;
+    opacity: 0.5;
+}
+
+.mensajes{
+    float: right;
+    background-color: var(--color_blanco);
+    text-align: center;
+    width: 35%;
+    height: 90%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 32px;
+}
+
+.mensajes img{
+    width: 90%;
+}
+
+.mensajes h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mensajes p{
+    margin: 2%;
+    font-size: 1rem;
+}
+
+.imagen_muñeco_sin_mensaje{
+    visibility: visible;
+}
+
+#resultado{
+    padding: 30px 20px;
+}
+
+#texto_resultado{
+    width: 100%;
+    height: 90%;
+    font-size: 1.5rem;
+    color: #808080;
+    background-color: var(--color_blanco);
+    text-align: left;
+    visibility: visible;
+    display: none;
+}
+
+#sin_mensaje{
+    visibility: visible;
+}
+
+#solicitud_mensaje{
+    visibility: visible;
+}
+
+.copiar{
+    margin: 2%;
+    width: 40%;
+    padding: 3% 0;
+    font-size: 1rem;
+    color: var(--color_azul);
+    background-color: #D8DFE8;
+    border-radius: 15px;
+    border-color: var(--color_azul);
+    display: none;
+}
+
+.botones{
+    display: block;
+}
+
+.botones p{
+    font-size: 0.75rem;
+    color: #808080;
+    margin-bottom: 1%;
+}
+
+.boton_encriptar{
+    margin: auto;
+    width: 20%;
+    padding: 1% 0;
+    font-size: 1rem;
+    color: var(--color_blanco);
+    border: none;
+    background-color: var(--color_azul);
+    border-radius: 15px;
+}
+
+.boton_desencriptar{
+    margin-left: 2%;
+    width: 20%;
+    padding: 1% 0;
+    font-size: 1rem;
+    color: var(--color_azul);
+    background-color: #D8DFE8;
+    border-color: var(--color_azul);
+    border-radius: 15px;
+}
+
+.footer{
+    margin: 5% auto;
+    padding: 1% 0;
+    background-color: var(--color_azul);
+    font-family: var(--fuente-inter);
+    text-align: center;
+    color: var(--color_blanco);
+    text-decoration: none;
+}
+
+#github, #linkedin{
+    color: var(--color_blanco);
+    text-decoration: none;
+}
+
+
+/* Sección Responsiva*/
+@media screen and (max-width:1024px){
+
+    .logo{
+        margin: 10% auto;
+    }
+
+    .texto,.botones{
+        display: block;
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    #ingreso_texto{
+        height: 5em;
+    }
+
+    #texto_resultado{
+        height: 5em;
+    }
+
+    .mensajes{
+        width: 90%;
+        height: 40%;
+        float: none;
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 80%;
+    }
+
+    .resultado{
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .boton_encriptar, .boton_desencriptar{
+        width: 45%;
+        margin: 2%;
+        padding: 2% 0;
+    }
+
+    #imagen_muñeco_sin_mensaje{
+        display: none;
+    }
+
+}
